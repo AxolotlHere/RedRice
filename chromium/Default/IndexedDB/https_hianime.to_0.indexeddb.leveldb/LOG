@@ -1,0 +1,14 @@
+2025/04/07-20:18:30.270 a207 Reusing MANIFEST /home/axolotl/.config/chromium/Default/IndexedDB/https_hianime.to_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/07-20:18:30.271 a207 Recovering log #10
+2025/04/07-20:18:30.271 a207 Reusing old log /home/axolotl/.config/chromium/Default/IndexedDB/https_hianime.to_0.indexeddb.leveldb/000010.log 
+2025/04/07-20:40:27.346 a209 Level-0 table #15: started
+2025/04/07-20:40:27.424 a209 Level-0 table #15: 209 bytes OK
+2025/04/07-20:40:27.498 a209 Delete type=0 #10
+2025/04/07-20:40:27.498 a209 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 63736 : 1
+2025/04/07-20:40:27.498 a209 Compacting 1@0 + 1@1 files
+2025/04/07-20:40:27.614 a209 Generated table #16@0: 19324 keys, 572346 bytes
+2025/04/07-20:40:27.614 a209 Compacted 1@0 + 1@1 files => 572346 bytes
+2025/04/07-20:40:27.687 a209 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/04/07-20:40:27.688 a209 Delete type=2 #12
+2025/04/07-20:40:27.688 a209 Delete type=2 #15
+2025/04/07-20:40:27.689 a209 Manual compaction at level-0 from '\x00\x00\x00\x00\x06' @ 63736 : 1 .. (end); will stop at (end)

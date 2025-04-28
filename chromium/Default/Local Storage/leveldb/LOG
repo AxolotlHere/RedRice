@@ -1,0 +1,6 @@
+2025/04/27-11:42:04.408 4 Reusing MANIFEST /home/axolotl/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2025/04/27-11:42:04.990 4 Recovering log #94
+2025/04/27-11:42:05.515 4 Reusing old log /home/axolotl/.config/chromium/Default/Local Storage/leveldb/000094.log 
+2025/04/27-11:43:40.706 5 Level-0 table #99: started
+2025/04/27-11:43:40.785 5 Level-0 table #99: 12618 bytes OK
+2025/04/27-11:43:40.872 5 Delete type=0 #94

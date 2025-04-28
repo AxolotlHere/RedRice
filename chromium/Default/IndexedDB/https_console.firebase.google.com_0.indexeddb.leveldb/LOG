@@ -1,0 +1,6 @@
+2025/04/22-20:22:48.724 20cf Creating DB /home/axolotl/.config/chromium/Default/IndexedDB/https_console.firebase.google.com_0.indexeddb.leveldb since it was missing.
+2025/04/22-20:22:48.943 20cf Reusing MANIFEST /home/axolotl/.config/chromium/Default/IndexedDB/https_console.firebase.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/22-20:22:49.223 20ec Level-0 table #5: started
+2025/04/22-20:22:49.333 20ec Level-0 table #5: 775 bytes OK
+2025/04/22-20:22:49.456 20ec Delete type=0 #3
+2025/04/22-20:22:49.457 20ec Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

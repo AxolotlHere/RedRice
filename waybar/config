@@ -1,0 +1,127 @@
+{
+
+  "layer":"bottom",
+  "position":"top",
+  "margin-top":10,
+  "margin-left":21,
+  "margin-right":21,
+  "margin-bottom":0,
+  "height":2,
+  "spacing":2,
+  "modules-left":["clock","mpris"],
+  "modules-center":["hyprland/workspaces"],
+  "modules-right":["pulseaudio","network","group/hardware","upower","custom/power"],
+ "pulseaudio": {
+    "format": "♬ {volume}%",
+    "format-bluetooth": " {volume}%",
+    "format-muted": " 0%",
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"]
+},
+  "group/hardware":{
+    "orientation": "horizontal",
+    "modules":[
+    "tray",
+    "bluetooth"
+    ]
+  },
+  "bluetooth":{
+    "format":"",
+    "on-click": "blueman-manager",
+  },
+      "clock": {
+        "format": "  {:%H:%M} ",
+        "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffffff'><b>{}</b></span>",
+                              "days":       "<span color='#ffffff'><b>{}</b></span>",
+                              "weeks":      "<span color='#ffffff'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffffff'><b>{}</b></span>",
+                              "today":      "<span color='#ffffff'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "tz_up",
+                    "on-scroll-down": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+  "memory":{
+    "format":"DISK : {percentage}%",
+    "on-click":"nautilus",
+  },
+  "hyprland/workspaces": {
+  "persistent-workspaces":{
+    "1":[],
+    "2":[],
+    "3":[],
+    "4":[],
+    "5":[],
+    "6":[],
+  },
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "1": "一",
+    "2": "二",
+    "3": "三",
+    "4": "四",
+    "5": "五",
+    "6": "六"
+  },
+  "sort-by-number": false
+  },
+  
+
+  "mpris": {
+  "persistent":true,
+  "format-stopped": "Songs plech :) no fun",
+	"format": "🎶 {dynamic} {player_icon}",
+	"max-length":35,
+	"min-length":35,
+	"format-paused": "{status_icon} <i>{dynamic}</i>",
+  "format-stopped": "Sad without any music :(, Play music",
+"on-click": "playerctl play",
+	"player-icons": {
+		"default": "🎶",
+		"mpv": "🎶"
+	},
+	"status-icons": {
+		"paused": ""
+	},
+	// "ignored-players": ["firefox"]
+},
+"upower": {
+     "icon-size": 15,
+     "hide-if-empty": true,
+     "tooltip": true,
+     "tooltip-spacing": 20
+},
+   	"custom/power": {
+		"format": " ",
+		"on-click": "~/.config/Rofi-Power-Menu/RofiPower.sh",
+	}, 
+"network": {
+    "interface": "wlo1",
+    "format": "{ifname}",
+    "format-wifi": "{bandwidthUpBytes} ⬆ | {bandwidthDownBytes} ⬇",
+    "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+    "on-click": "nm-connection-editor",
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": " {essid}",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "   Disconnected",
+    "max-length": 50
+}
+}
+
+

@@ -1,0 +1,124 @@
+
+/* ---- Configuration ---- */
+configuration {
+    show-icons:                     false;
+}
+
+
+
+
+/* ---- Global Properties ---- */
+* {
+    font:                           "JetBrains Mono 10";
+}
+
+/* ---- Main Window ---- */
+window {
+    location:                       center;
+    anchor:                         center;
+    fullscreen:                     false;
+    width:                          700px;
+    height:                         300px;
+    x-offset:                       0px;
+    y-offset:                       0px;
+    padding:                        0px;
+    border:                         2px;
+    border-radius:                  15px;
+    border-color:                   #ffffff;
+    cursor:                         "default";
+    background-color:               #1c1c1c;
+}
+
+/* ---- Main Box ---- */
+mainbox {
+    enabled:                        true;
+    spacing:                        0px;
+    margin:                         0px;
+    padding:                        0px;
+    border:                         0px solid;
+    border-radius:                  0px;
+    background-image:               url("~/.config/Wallpapers/anime_girl_1.jpg", height);
+    border-color:                   #ffffff;
+    background-color:               #1c1c1c;
+    children:                       [ "inputbar", "listview", "message" ];
+}
+
+/* ---- Inputbar ---- */
+inputbar {
+    enabled:                        true;
+	padding:						20px;
+    background-color:               transparent;
+    orientation:                    horizontal;
+    children:                       ["prompt"];
+}
+
+prompt {
+    enabled:                        true;
+	padding:						10px;
+	border-radius:					15px;
+    border-color:                   #ffffff;
+    background-color:               #1c1c1c;
+    text-color:                     #ffffff;
+    cursor:                         text;
+}
+
+/* ---- Listview ---- */
+listview {
+    enabled:                        true;
+    columns:                        3;
+    lines:                          2;
+    cycle:                          true;
+    dynamic:                        true;
+    scrollbar:                      false;
+    layout:                         vertical;
+    reverse:                        false;
+    fixed-height:                   false;
+    fixed-columns:                  true;
+    spacing:                        40px;
+    padding:                        4% 40px;
+    background-color:               transparent;
+    cursor:                         "default";
+    border:                         0px;
+	border-color:                   #ffffff;
+}
+
+/* ---- Elements ---- */
+element {
+    enabled:                        true;
+    padding:                        20px;
+    border-radius:                  30px;
+    background-color:               #1c1c1c;
+    text-color:                     #ffffff;
+    cursor:                         pointer;
+}
+element-text {
+    font:                           "JetBrains Mono 10";
+    background-color:               transparent;
+    text-color:                     inherit;
+    cursor:                         inherit;
+    vertical-align:                 0.5;
+    horizontal-align:               0.5;
+}
+element selected.normal {
+    background-color:               #d5e4c2;
+    text-color:                     #1c1c1c;
+}
+element alternate.normal {
+    background-color:               #1c1c1c;
+}
+
+/* ---- Message ---- */
+message {
+    enabled:                        true;
+    margin:                         0px;
+    background-color:               transparent;
+    text-color:                     #ffffff;
+    border:                         0px;
+}
+textbox {
+    font:                           "Fira Code SemiBold 8";
+    background-color:               #1c1c1c;
+    text-color:                     #ffffff;
+    vertical-align:                 0.5;
+    horizontal-align:               0.5;
+}

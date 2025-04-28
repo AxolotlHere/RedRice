@@ -1,0 +1,207 @@
+
+configuration {
+	modi:                       "drun,run,filebrowser";
+    show-icons:                 true;
+    display-drun:               "APPS";
+    display-run:                "RUN";
+    display-filebrowser:        "FILES";
+	window-format:              "{w} · {c} · {t}";
+}
+
+* {
+    font:                        "JetBrains Mono 10";
+    dpi: 96;
+    background:                  rgba(28,28,28,0%); 
+    background-alt:              rgba(28,28,28,0%);
+    foreground:                  #DDDDDD;
+    selected:                    #1c1c1c;
+    active:                      #1c1c1c;
+    urgent:                      #1c1c1c;
+}
+
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       800px;
+    height: 350px;
+    width: 1000px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+    background:                  rgba(28,28,28,0%); 
+    background-alt:              rgba(28,28,28,0%);
+    /* properties for all widgets */
+    enabled:                     true;
+    border-radius:               15px;
+    cursor:                      "default";
+    
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            rgba(0,0,0,0);
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listbox" ];
+}
+
+imagebox {
+    border-radius: 20px;
+    padding:                     20px;
+    background-color:            rgba(0,0,0,0);
+    background-image:            url("/home/axolotl/.config/Wallpapers/anime_girl.png", height);
+    orientation:                 vertical;
+    children:                    [ "inputbar", "dummy", "mode-switcher" ];
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    background-color:            rgba(0,0,0,0);
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+dummy {
+    background-color:            rgba(0,0,0,0);
+}
+
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @background-alt;
+    text-color:                  @foreground;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    border-radius:               10px;
+    padding:                     10px;
+    enabled:                     true;
+    background-color:            #ececec;
+    text-color:                  #000000;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
+}
+
+
+mode-switcher{
+    enabled:                     true;
+    spacing:                     20px;
+    background-color:            rgba(0,0,0,0);
+    text-color:                  @foreground;
+}
+button {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @background-alt;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            @selected;
+    text-color:                  @foreground;
+}
+
+
+listview {
+    fixed-height: true;
+    fixed-columns: true;
+    dynamic: false;
+    border:0px;
+    enabled:                     true;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    spacing:                     10px;
+    background-color:            rgba(0,0,0,0);
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+
+element {
+    enabled:                     true;
+    spacing:                     15px;
+    padding:                     8px;
+    border-radius:               10px;
+    background-color:            rgba(0,0,0,0);
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+element normal.urgent {
+    background-color:            @urgent;
+    text-color:                  @foreground;
+}
+element normal.active {
+    background-color:            @active;
+    text-color:                  @foreground;
+}
+element selected.normal {
+    background-color:            @selected;
+    text-color:                  @foreground;
+}
+element selected.urgent {
+    background-color:            @urgent;
+    text-color:                  @foreground;
+}
+element selected.active {
+    background-color:            @urgent;
+    text-color:                  @foreground;
+}
+element-icon {
+    background-color:            inherit;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:           inherit; 
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+element alternate.normal {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+
+message {
+    background-color:            rgba(0,0,0,0);
+}
+textbox {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @background-alt;
+    text-color:                  @foreground;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+error-message {
+    padding:                     15px;
+    border-radius:               20px;
+    background-color:            @background;
+    text-color:                  @foreground;
+}

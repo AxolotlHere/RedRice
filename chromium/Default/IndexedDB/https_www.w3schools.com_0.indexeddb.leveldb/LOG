@@ -1,6 +1,0 @@
-2025/04/02-00:58:29.091 8209 Creating DB /home/axolotl/.config/chromium/Default/IndexedDB/https_www.w3schools.com_0.indexeddb.leveldb since it was missing.
-2025/04/02-00:58:29.249 8209 Reusing MANIFEST /home/axolotl/.config/chromium/Default/IndexedDB/https_www.w3schools.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/04/02-00:58:35.022 8206 Level-0 table #5: started
-2025/04/02-00:58:35.082 8206 Level-0 table #5: 365 bytes OK
-2025/04/02-00:58:35.156 8206 Delete type=0 #3
-2025/04/02-00:58:35.157 8206 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

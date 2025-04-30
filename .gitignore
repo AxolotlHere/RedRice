@@ -1,0 +1,17 @@
+#file type ignore
+
+#directory ignore
+KDE/
+akonadi/
+chromium/
+dconf/
+go/
+gtk-2.0/
+gtk-3.0/
+hardhat-nodejs/
+kalk/
+kdeconnect/
+libaccounts-glib/
+nextjs-nodejs/
+spotifyd/
+wireshark/

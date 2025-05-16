@@ -10,6 +10,6 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.colorscheme.sonokai" },
+  { import = "astrocommunity.colorscheme.nord-nvim" },
   -- import/override with your plugins folder
 }

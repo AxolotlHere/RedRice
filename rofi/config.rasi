@@ -9,7 +9,7 @@ configuration {
 }
 
 * {
-    font:                        "JetBrains Mono 10";
+    font:                   "DejaVu Sans Mono 10";
     dpi: 96;
     background:                  rgba(28,28,28,0%); 
     background-alt:              rgba(28,28,28,0%);

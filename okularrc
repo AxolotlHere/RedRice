@@ -1,5 +1,7 @@
 [Desktop Entry]
 FullScreen=false
+shouldShowMenuBarComingFromFullScreen=true
+shouldShowToolBarComingFromFullScreen=true
 
 [General]
 LockSidebar=true
@@ -29,20 +31,26 @@ ZoomMode=1
 Units=cm
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/Ex6.Echo,TCP,Hamming.doc
-File2[$e]=$HOME/Downloads/LabDA_4.docx
-File3[$e]=$HOME/Downloads/Ex6.Echo,TCP,Hamming(1).doc
-File4[$e]=$HOME/Downloads/webp/lab_subm/lab11.docx
-File5[$e]=$HOME/Workspace/Programming/github.md
-File6[$e]=$HOME/Downloads/Computational Geometry - Line Segments.pptx
-File7[$e]=$HOME/Downloads/RESUME(1).docx
-Name1[$e]=Ex6.Echo,TCP,Hamming.doc
-Name2[$e]=LabDA_4.docx
-Name3[$e]=Ex6.Echo,TCP,Hamming(1).doc
-Name4[$e]=lab11.docx
-Name5[$e]=github.md
-Name6[$e]=Computational Geometry - Line Segments.pptx
-Name7[$e]=RESUME(1).docx
+File1[$e]=$HOME/Workspace/Programming/github.md
+File10[$e]=$HOME/Downloads/CAT-2 STUDY MATERIALS-20250513/MODULE-5/What is Blockchain Ecosystem.docx
+File2[$e]=$HOME/Downloads/Computational Geometry - Line Segments.pptx
+File3[$e]=$HOME/Downloads/RESUME(1).docx
+File4[$e]=$HOME/Downloads/CAT-1 STUDY MATERIALS-20250122/CSE1006_Module 1.pptx
+File5[$e]=$HOME/Downloads/CAT-1 STUDY MATERIALS-20250122/MODULE-1_BCSE324L.pptx
+File6[$e]=$HOME/Downloads/CAT-1 STUDY MATERIALS-20250122/PoW.pptx
+File7[$e]=$HOME/Downloads/CAT-1 STUDY MATERIALS-20250122/Proof of Work (PoW).pptx
+File8[$e]=$HOME/Downloads/CAT-1 STUDY MATERIALS-20250122/ABFT-1.pptx
+File9[$e]=$HOME/Downloads/CAT-2 STUDY MATERIALS-20250513 (2)/MODULE-5/What is Blockchain Ecosystem.docx
+Name1[$e]=github.md
+Name10[$e]=What is Blockchain Ecosystem.docx
+Name2[$e]=Computational Geometry - Line Segments.pptx
+Name3[$e]=RESUME(1).docx
+Name4[$e]=CSE1006_Module 1.pptx
+Name5[$e]=MODULE-1_BCSE324L.pptx
+Name6[$e]=PoW.pptx
+Name7[$e]=Proof of Work (PoW).pptx
+Name8[$e]=ABFT-1.pptx
+Name9[$e]=What is Blockchain Ecosystem.docx
 
 [SlideShow]
 PresentationMonitor=0

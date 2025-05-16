@@ -11,6 +11,7 @@ application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 image/png=org.kde.koko.desktop
 application/pdf=firefox.desktop
+image/jpeg=org.kde.koko.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;
@@ -25,3 +26,4 @@ application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 image/png=org.kde.koko.desktop;
 application/pdf=firefox.desktop;
+image/jpeg=org.kde.koko.desktop;
